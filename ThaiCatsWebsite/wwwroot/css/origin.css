@@ -1,0 +1,75 @@
+﻿/* ThaiCatsWebsite/wwwroot/css/origin.css */
+
+/* Стили для страницы происхождения */
+body {
+    background: linear-gradient(to right, #EFA94A, #FF8C69, #FFB28B, #FCE883, #606E8C, #7FB5B5, #5D9B9B, #99FF99, #AFDAFC, #ACE5EE, #FF7F50, #FF8243, #FFA420, #363F59, #445069, #445069);
+    /* Градиентный фон */
+    background-size: 200% 200%;
+    animation: gradientAnimation 10s ease infinite;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.origin-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Белый фон с прозрачностью */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Тень */
+}
+
+.origin-photos {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.rounded-photo {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 4px solid #757CFF; /* обводка */
+    transition: transform 0.3s ease-in-out;
+}
+
+    .rounded-photo:hover {
+        transform: scale(1.1);
+    }
+
+h2 {
+    text-align: center;
+    padding: 10px;
+    color: #fff; /* Цвет текста */
+    border-radius: 10px;
+    background: linear-gradient(45deg, #72AEEF, #FF8C69); /* Градиентный фон */
+    background-size: 200% 200%;
+    animation: gradientAnimation 10s ease infinite;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}

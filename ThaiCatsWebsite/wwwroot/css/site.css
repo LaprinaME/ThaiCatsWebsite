@@ -1,0 +1,71 @@
+﻿/* ThaiCatsWebsite/wwwroot/css/site.css */
+
+body {
+    font-family: 'Times New Roman', Times, serif; /* Шрифт Times New Roman */
+    background: linear-gradient(to bottom, #FED7DD, #FDC4D5, #FED2E2, #FFC1CC, #82898F, #697177, #5D6265); /* Градиентный фон */
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1, h2 {
+    color: #333333;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+p {
+    line-height: 1.6;
+}
+
+/* Add your additional styles as needed */
+
+/* Styles for the home page */
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.home-buttons {
+    margin-top: 20px;
+}
+
+    .home-buttons a {
+        display: inline-block;
+        padding: 10px 20px;
+        margin: 10px;
+        border-radius: 20px;
+        text-decoration: none;
+        font-size: 18px;
+        color: #474A51;
+        background: #FED2E2;
+        transition: background 0.3s ease;
+    }
+
+        .home-buttons a:hover {
+            background: #474A51;
+            color: #DCDCDC;
+        }
+
+.quote {
+    text-align: center;
+}
+
+.cat-image {
+    width: 600px;
+    height: 400px;
+    border: 3px solid #A3D0FF;
+    border-radius: 50px; /* Пример радиуса для скругленных углов */
+    margin-top: 20px; /* Пример отступа сверху */
+}

@@ -1,0 +1,31 @@
+﻿/* Стили для хедера и футера с анимацией градиента */
+
+.header-container, .footer-container {
+    text-align: center; /* Выравнивание по центру */
+    padding: 20px; /* Внутренний отступ */
+    color: #fff; /* Цвет текста */
+}
+
+.header-container {
+    background: linear-gradient(to right, #FCE883, #AFDAFC, #FF8C69); /* Градиентный фон для хедера */
+    animation: gradientAnimation 10s ease infinite; /* Анимация градиента */
+}
+
+.footer-container {
+    background: linear-gradient(to right, #FF5E62, #FF9966); /* Градиентный фон для футера */
+    animation: gradientAnimation 10s ease infinite; /* Анимация градиента */
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}

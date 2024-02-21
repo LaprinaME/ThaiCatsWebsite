@@ -1,0 +1,31 @@
+﻿
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers;
+@section Header {
+    <div>Добро пожаловать на сайт «ThaiCatsWebsite»</div>
+}
+
+<h2>@Model.Title</h2>
+
+<link rel="stylesheet" type="text/css" href="~/css/site.css">
+
+<div class="home-container">
+    <img src="~/images/kot.jpg" alt="Cute Cat" class="cat-image" />
+
+    <p class="quote">@Model.Content</p>
+
+    <div class="home-buttons">
+        <a asp-action="Index" asp-controller="Origin">Происхождение</a>
+        <br />
+        <a asp-action="Index" asp-controller="Character">Характер</a>
+        <br />
+        <a asp-action="Index" asp-controller="Care">Уход</a>
+    </div>
+</div>
+
+@section Footer {
+    <div>© У котят есть очень странная привычка… что бы вы им ни сказали, они всегда отвечают “муррр”, — Льюис Кэрролл, писатель.</div>
+}
+
+
+
+
