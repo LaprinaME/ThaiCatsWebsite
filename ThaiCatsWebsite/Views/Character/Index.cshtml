@@ -3,8 +3,42 @@
     ViewData["Title"] = "Character of Thai Cats";
 }
 <link rel="stylesheet" type="text/css" href="~/css/character.css">
+<style>
+    .character-container {
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Тень */
+        color: #434B4D; /* Цвет текста */
+        text-align: justify; /* Выравнивание текста по ширине */
+        max-width: 600px; /* Максимальная ширина контейнера */
+        margin: 20px auto; /* Выравнивание контейнера по центру */
+    }
+
+    #home-buttons {
+        margin-top: 20px;
+    }
+
+        #home-buttons a {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-size: 18px;
+            color: #474A51;
+            background: #FED2E2;
+            transition: background 0.3s ease;
+            text-align: center;
+        }
+
+            #home-buttons a:hover {
+                background: #474A51;
+                color: #DCDCDC;
+            }
+</style>
 <div  class="character-container">
     <h2 style="color: #434B4D;">Характер тайской кошки</h2>
     <p>Тайские кошки, как и другие представители восточных пород, активны, требовательны и бывают упрямы. Однако они очень умны, дружелюбны, сильно привязываются к хозяину и верны ему всю жизнь. Тайцы склонны разделять людей на своих и чужих: к владельцу всегда ласковы, а вот к чужим людям могут относиться настороженно. Они способны даже ворчать, но агрессии обычно не проявляют.</p>
-</div>
-
+    <div id="home-buttons">
+        <a asp-action="Index" asp-controller="Home">Home</a>
+    </div>

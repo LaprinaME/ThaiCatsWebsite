@@ -1,0 +1,24 @@
+﻿@model ThaiCatsWebsite.Models.Cat
+@{
+    ViewData["Title"] = "Create Cat";
+}
+
+<h2>Create Cat</h2>
+
+<form asp-action="CreateRezult" method="post">
+    <div>
+        <label asp-for="Breed">Breed:</label>
+        <input asp-for="Breed" />
+    </div>
+    <div>
+        <label asp-for="Weight">Weight:</label>
+        <input asp-for="Weight" />
+    </div>
+    <div>
+        <label asp-for="Color">Color:</label>
+        <input asp-for="Color" />
+    </div>
+    <div>
+        <button type="submit">Create</button>
+    </div>
+</form>

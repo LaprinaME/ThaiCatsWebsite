@@ -1,0 +1,17 @@
+﻿@model ThaiCatsWebsite.Models.Cat
+@{
+    ViewData["Title"] = "Thai Cat Result";
+}
+
+<h2>Thai Cat Result</h2>
+@if (Model != null)
+{
+    <p><strong>Breed:</strong> @Model.Breed</p>
+    <p><strong>Weight:</strong> @Model.Weight</p>
+    <p><strong>Color:</strong> @Model.Color</p>
+}
+else
+{
+    <p>No Thai Cat data available.</p>
+}
+

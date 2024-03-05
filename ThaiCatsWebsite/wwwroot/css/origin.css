@@ -73,3 +73,27 @@ h2 {
         background-position: 0% 50%;
     }
 }
+
+/* Дополнительные стили для кнопок */
+#home-buttons {
+    margin-top: 20px;
+}
+
+    #home-buttons a {
+        display: inline-block;
+        padding: 10px 20px;
+        margin: 10px;
+        border-radius: 20px;
+        text-decoration: none;
+        font-size: 18px;
+        color: #474A51;
+        background: #FED2E2;
+        transition: background 0.3s ease;
+        text-align: center;
+    }
+
+        #home-buttons a:hover {
+            background: #474A51;
+            color: #DCDCDC;
+        }
+
